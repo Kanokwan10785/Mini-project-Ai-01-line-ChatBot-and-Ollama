@@ -109,8 +109,8 @@ def linebot():
     body = request.get_data(as_text=True)
     try:
         json_data = json.loads(body)
-        access_token = 'IuLTrZFFecg63h5BngG9BPzGGKPXrC+Xt+yKoadlP00RNu5/xO2DmFsQgZTSK0HLleu63PXCOO35+moHW6SeYQo+LtfC2vA4H+79nb11zh8GH1AhjhsB9Ycw8G6QfhcFOHGDY1/hi1l4G5ZVF9xeFAdB04t89/1O/w1cDnyilFU='
-        secret = '991c2f01aa85f28eabfbbf2c9a96c24c'
+        access_token = 'ACCESS_TOKEN Line'
+        secret = 'SECRET Line'
         line_bot_api = LineBotApi(access_token)
         handler = WebhookHandler(secret)
         signature = request.headers['X-Line-Signature']
